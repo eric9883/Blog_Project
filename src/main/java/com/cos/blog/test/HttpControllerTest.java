@@ -24,15 +24,15 @@ public class HttpControllerTest {
     }
 
     //http://localhost:8080/http/post
-    @PostMapping("/http/post")
-    public String postTest(){
-        return "post request";
+    @PostMapping("/http/post") //text/plain, application/json
+    public String postTest(@RequestBody Member m){ //MessageConverter(스프링부트)
+        return "post request: " + m.getId() + ", " + m.getUsername() + ", " + m.getPassword() + ", " + m.getEmail();
     }
 
     //http://localhost:8080/http/put
     @PutMapping("/http/put")
-    public String putTest(){
-        return "put request";
+    public String putTest(@RequestBody Member m){
+        return " put request: " + m.getId() + ", " + m.getUsername() + ", " + m.getPassword() + ", " + m.getEmail();
     }
 
     //http://localhost:8080/http/delete
