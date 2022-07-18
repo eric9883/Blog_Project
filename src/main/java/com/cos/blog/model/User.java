@@ -6,12 +6,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.DynamicInsert;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
 
 
-
+//@DynamicInsert    // exclude null field while DB insert
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -34,8 +35,10 @@ public class User {
     @Column(nullable = false, length = 50)
     private String email;
 
-    @ColumnDefault("'user'")
-    private String role; //     Enum type is better, ex) admin, user, manager
+
+    //  @ColumnDefault("user")
+    @Enumerated(EnumType.STRING)
+    private RoleType role;  //  Enum type is better, ex) admin, user, manager
 
 
     @CreationTimestamp //automatically input time stamp
