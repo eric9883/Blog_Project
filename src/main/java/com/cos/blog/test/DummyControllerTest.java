@@ -33,9 +33,12 @@ public class DummyControllerTest {
         try{
             userRepository.deleteById(id);
 
-        } catch(Exception e){
+        } catch(EmptyResultDataAccessException e){
             return "error";
         }
+
+
+
 
         return id + " Delete Completed";
     }
