@@ -29,7 +29,7 @@
                                                                     <%--we don't need remember option in Join function--%>
             </label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">JOIN</button>
     </form>
 </div>
 <br />
