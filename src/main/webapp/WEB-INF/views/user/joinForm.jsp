@@ -8,16 +8,25 @@
 
     <form action="/action_page.php">
         <div class="form-group">
-            <label for="email">Email address:</label>
-            <input type="email" class="form-control" placeholder="Enter email" id="email">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" placeholder="Enter Username" id="username">
         </div>
+
+        <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" placeholder="Enter Email" id="email">
+        </div>
+
         <div class="form-group">
             <label for="pwd">Password:</label>
-            <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+            <input type="password" class="form-control" placeholder="Enter Password" id="pwd">
         </div>
+
+
         <div class="form-group form-check">
             <label class="form-check-label">
-                <input class="form-check-input" type="checkbox"> Remember me
+                <input class="form-check-input" type="checkbox">    <%--//Remember me--%>
+                                                                    <%--we don't need remember option in Join function--%>
             </label>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
