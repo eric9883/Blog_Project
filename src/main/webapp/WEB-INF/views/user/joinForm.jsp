@@ -25,7 +25,7 @@
 
         <div class="form-group form-check">
             <label class="form-check-label">
-                <input class="form-check-input" type="checkbox">    <%--//Remember me--%>
+                <%--<input class="form-check-input" type="checkbox">    Remember me--%>
                                                                     <%--we don't need remember option in Join function--%>
             </label>
         </div>
