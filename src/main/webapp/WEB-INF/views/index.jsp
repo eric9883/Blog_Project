@@ -28,6 +28,7 @@
                 <a class="nav-link" href="/user/join">JOIN</a>
             </li>
 
+
         </ul>
     </div>
 </nav>
@@ -35,6 +36,41 @@
 
 <div class="container">
 
+    <div class="card m-2">
+        <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+        <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Content</p>
+            <a href="#" class="btn btn-primary">Detail</a>
+        </div>
+    </div>
+
+    <div class="card m-2">
+        <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+        <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Content</p>
+            <a href="#" class="btn btn-primary">Detail</a>
+        </div>
+    </div>
+
+    <div class="card m-2">
+        <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+        <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Content</p>
+            <a href="#" class="btn btn-primary">Detail</a>
+        </div>
+    </div>
+
+
+
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Created by ERIC</p>
+    <p>010-1111-1234</p>
+    <p>🏴서울특별시 서초구</p>
 </div>
 
 </body>
