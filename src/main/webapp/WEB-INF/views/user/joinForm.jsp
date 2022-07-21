@@ -23,15 +23,20 @@
         </div>
 
 
-        <div class="form-group form-check">
+        <%--<div class="form-group form-check">
             <label class="form-check-label">
-                <%--<input class="form-check-input" type="checkbox">    Remember me--%>
-                                                                    <%--we don't need remember option in Join function--%>
+                <input class="form-check-input" type="checkbox">    Remember me
+
             </label>
-        </div>
-        <button type="submit" class="btn btn-primary">JOIN</button>
+        </div>--%>
+
     </form>
+
+    <button id="btn-save" type="submit" class="btn btn-primary">JOIN</button>
 </div>
+<script src ="../js/user.js"></script>
+
+
 <br />
 
 
