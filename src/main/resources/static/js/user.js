@@ -1,12 +1,14 @@
 let index = {
-    init: function (){
+    init: function(){
         $("#btn-save").on("click",()=>{
             this.save();
         });
     },
 
-    save: function (){
+    save: function(){
         alert("user save function call");
     }
 
 }
+
+index.init();
