@@ -34,6 +34,8 @@
 
     <button id="btn-save" type="submit" class="btn btn-primary">JOIN</button>
 </div>
+
+
 <script src ="../js/user.js"></script>
 
 
