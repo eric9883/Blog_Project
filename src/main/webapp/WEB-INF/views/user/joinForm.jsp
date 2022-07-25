@@ -13,13 +13,13 @@
         </div>
 
         <div class="form-group">
-            <label for="email">Email address:</label>
-            <input type="email" class="form-control" placeholder="Enter Email" id="email">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" placeholder="Enter Password" id="pwd">
         </div>
 
         <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" placeholder="Enter Password" id="pwd">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" placeholder="Enter Email" id="email">
         </div>
 
 
