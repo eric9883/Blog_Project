@@ -6,7 +6,13 @@ let index = {
     },
 
     save: function(){
-        alert("user save function call");
+        let data = {
+            username: $("#username").val(),
+            password: $("#password").val(),
+            email: $("#email").val(),
+
+        }
+        console.log(data);
     }
 
 }
