@@ -22,7 +22,9 @@ let index = {
             contentType:"application/json; charset=utf-8",
             dataType:"json"
         }).done(function(resp){
-            alert("Join Completed!!");
+            alert("JOIN COMPLETED!!");
+            //console.log(resp);
+
             location.href ="/blog";
 
         }).fail(function(error){
