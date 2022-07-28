@@ -10,8 +10,6 @@ let index = {
             username: $("#username").val(),
             password: $("#password").val(),
             email: $("#email").val(),
-            contentType: "application/json; charset=utf-8", // notify what BODY data type is (MIME)
-            dataType: "json"    // response from server
 
         }
 

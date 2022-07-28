@@ -23,6 +23,11 @@ public class Board {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // auto increment
     private int id;
 
+    @ManyToOne(fetch = FetchType.EAGER) //Many = Board, User = One
+    @JoinColumn(name = "userId")
+    private User user;
+
+
     @Column(nullable = false, length = 100)
     private String title;
 
@@ -33,9 +38,7 @@ public class Board {
     @ColumnDefault("0")
     private int count; // view count
 
-    @ManyToOne(fetch = FetchType.EAGER) //Many = Board, User = One
-    @JoinColumn(name = "userId")
-    private User user;
+
 
 
     @OneToMany(mappedBy = "board", fetch = FetchType.EAGER)

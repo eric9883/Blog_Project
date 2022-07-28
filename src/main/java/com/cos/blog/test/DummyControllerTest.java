@@ -21,11 +21,8 @@ import java.util.function.Supplier;
 @RestController
 public class DummyControllerTest {
 
-
     @Autowired  //  dependency injection
     private UserRepository userRepository;
-
-
 
     @DeleteMapping("/dummy/user/{id}")
     public String delete(@PathVariable int id) {

@@ -18,8 +18,8 @@
         </div>--%>
 
         <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" placeholder="Enter Password" id="pwd">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" placeholder="Enter Password" id="password">
         </div>
 
 

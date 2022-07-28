@@ -10,6 +10,7 @@ import org.hibernate.annotations.DynamicInsert;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 
 //@DynamicInsert    // exclude null field while DB insert
@@ -24,8 +25,10 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id; // sequence, auto_increment 넘버링
 
+
     @Column(nullable = false, length = 30, unique = true)
     private String username; //ID
+
 
 
     @Column(nullable = false, length = 100)
@@ -42,6 +45,6 @@ public class User {
 
 
     @CreationTimestamp //automatically input time stamp
-    private Timestamp createDate;
+    private LocalDateTime createDate;
 
 }

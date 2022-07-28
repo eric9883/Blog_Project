@@ -1,7 +1,10 @@
 package com.cos.blog.controller.api;
 
 import com.cos.blog.dto.ResponseDto;
+import com.cos.blog.model.RoleType;
 import com.cos.blog.model.User;
+import com.cos.blog.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,11 +13,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserApiController {
 
-    @PostMapping("/api/user")
-    public ResponseDto<Integer> save(@RequestBody User user){
-        System.out.println("UserApiController: save Requested");
+    @Autowired
+    private UserService userService;
 
-        return new ResponseDto<Integer>(HttpStatus.OK, 1);
+
+    @PostMapping("/api/user")
+    public ResponseDto<Integer> save(@RequestBody User user){   //username, password, email
+        System.out.println("UserApiController: save Requested");
+        user.setRole(RoleType.USER);
+        int result = userService.saveJoinUser(user);
+        return new ResponseDto<Integer>(HttpStatus.OK, result);
     }
 
 }
