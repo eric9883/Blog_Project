@@ -19,15 +19,15 @@ public class UserService {
 
 
     @Transactional
-    public Integer saveJoinUser(User user){
+    public void saveJoinUser(User user){
         try{
             userRepository.save(user);
-            return 1;
+
         } catch(Exception e){
             e.printStackTrace();
             System.out.println("UserService: 회원가입() :" +e.getMessage());
         }
-        return -1;
+
     }
 
 }

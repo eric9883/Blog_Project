@@ -21,8 +21,8 @@ public class UserApiController {
     public ResponseDto<Integer> save(@RequestBody User user){   //username, password, email
         System.out.println("UserApiController: save Requested");
         user.setRole(RoleType.USER);
-        int result = userService.saveJoinUser(user);
-        return new ResponseDto<Integer>(HttpStatus.OK, result);
+        userService.saveJoinUser(user);
+        return new ResponseDto<Integer>(HttpStatus.OK.value(), 1);
     }
 
 }
